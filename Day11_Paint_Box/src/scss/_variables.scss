@@ -1,5 +1,7 @@
 $paddingLeft: 65px;
 $boxContentColor :rgb(243,237,232);
+$darkGray: rgb(65,65,65);
+$lightGray: rgb(157,157,156);
 
 %contentCenter {
   display: flex;
@@ -18,10 +20,11 @@ $boxContentColor :rgb(243,237,232);
 
 %contentText{
   font-size: 2em;
-  width: 50%;
+  width: 80%;
 }
 
 %contentButton {
   padding: 1.5em 5em;
   border: 1px solid #000;
 }
+
