@@ -1,0 +1,27 @@
+$paddingLeft: 65px;
+$boxContentColor :rgb(243,237,232);
+
+%contentCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+%contentHeader{
+  font-family: "proxima-nova","Helvetica","Arial",sans-serif;
+  font-size: 10px;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+}
+
+%contentText{
+  font-size: 2em;
+  width: 50%;
+}
+
+%contentButton {
+  padding: 1.5em 5em;
+  border: 1px solid #000;
+}
