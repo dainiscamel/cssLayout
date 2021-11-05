@@ -1,0 +1,23 @@
+%headerTitle {
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 40px;
+}
+
+%btn {
+  text-decoration: none;
+  font-size: 16px;
+  color: inherit;
+  border: $border;
+  border-radius: 20px;
+  padding: 8px 20px;
+  min-width: 144px;
+  display: inline-block;
+  text-align: center;
+  font-weight: 500;
+  &:hover {
+    transition: all 0.2s ease-in;
+    color: white;
+    background-color: black;
+  }
+}
