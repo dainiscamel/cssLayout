@@ -6,84 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="dist/css/reset.css" />
     <link rel="stylesheet" href="dist/css/styles.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <title>Schwartz</title>
   </head>
   <body>
-    <!-- 헤더 -->
-    <!-- <header>
-      <button><span>햄버거버튼</span></button>
-      <a href="#">
-        <svg width="200" height="30">
-          <text x="0" y="15" fill="black">Schwartz</text>
-        </svg>
-      </a>
-
-      <a href="#">
-        <svg width="200" height="30">
-          <text x="0" y="15" fill="black">Media</text>
-        </svg>
-      </a>
+    <header>
+      <a href="javascript:void(0)" onclick="btnToggle()"><i class="fas fa-bars"></i></a>
+      <div class="header__item">
+        <a href="#">Schwartz</a>
+        <a href="#">Media</a>
+      </div>
     </header>
 
-    <nav>
-      <ul>
-        <li>Journalism</li>
-        <li>Advertising</li>
-        <li>News</li>
-      </ul>
+    <nav id="nav">
+      <a href="javascript:void(0)" onclick="btnToggle()"><i class="fas fa-times"></i></a>
+      <div class="menu">
+        <ul class="menu-item">
+          <li><a href="#">Journalism</a></li>
+          <li><a href="#">Advertising</a></li>
+          <li><a href="#">News</a></li>
+        </ul>
+  
+        <ul class="menu-item">
+          <li><a href="#">Shop</a></li>
+        </ul>
+  
+        <ul class="menu-item">
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      
 
-      <ul>
-        <li>Shop</li>
-      </ul>
-
-      <ul>
-        <li>Careera</li>
-        <li>Contact</li>
-      </ul>
-
-      <div>
-        <div>
+      <div class="menu__footer">
+        <ul class="menu-item">
           <a href="#">
             <span>Subscriber Login</span>
           </a>
-        </div>
+        </ul>
 
-        <div>
+        <ul class="menu-item">
           <a href="#">
             <span>Terms & Conditions </span>
           </a>
-        </div>
-        <div>
           <a href="#">
             <span>Privacy Policy</span>
           </a>
-        </div>
+        </ul>
+        
 
-        <div>
+        <ul class="menu-item">
           <a href="#">
             <span>© 2021 Schwartz Publishing</span>
           </a>
-        </div>
-
-        <div>
           <a href="#">
             <span>All rights reserved</span>
           </a>
-        </div>
-
-        <div>
+        </ul>
+        <ul class="menu-item">
           <a href="#">
-            <svg width="200" height="30">
-              <text x="0" y="15" fill="black">Schwartz</text>
-            </svg>
+            <span class="logo">Schwartz</span>
           </a>
-        </div>
+        </ul>
+        
       </div>
-    </nav> -->
+    </nav>
     <main>
       <div class="hero">
         <div class="hero__photo"></div>
-        <h2>New that lasts.</h2>
+        <h2>News that lasts.</h2>
         <p>
           <span>About</span>
           Schwartz Media publishes intelligent news and current affairs that
@@ -184,7 +175,7 @@
           </article>
         </div>
 
-        <div class="row">
+        <div class="col">
           <article class="content">
             <div>
               <h3 class="content__header">Advertise</h4>
@@ -194,7 +185,11 @@
               <a href="#" class="btn">Learn more</a>
             </div>
           </article>
+
+          <article class="content"></article>
         </div>
+
+
 
         <div class="col">
           <article class="content">
@@ -276,3 +271,23 @@
     </footer>
   </body>
 </html>
+<script>
+  
+  function btnToggle() {
+  var x = document.getElementById("nav");
+  if (x.style.visibility === "visible") {
+    x.style.visibility = "hidden";
+    x.style.opacity="0";
+
+  } else {
+    x.style.visibility = "visible";
+    x.style.opacity="1";
+  }
+  // if (x.style.display === "block") {
+  //   x.style.display = "none";
+  // } else {
+  //   x.style.display = "block";
+  // }
+}
+
+</script>
